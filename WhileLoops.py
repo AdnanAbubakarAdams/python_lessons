@@ -38,3 +38,24 @@ i = 20
 while i > 15:
     print (i)
     i = i - 1
+
+
+# While loop that generates unique employee IDs for the Sales department by iterating through numbers
+# and displays each ID created
+i = 5000
+while i <= 5150: 
+    print(i)
+    i = i + 5 
+
+
+
+# While loop that generates unique employee IDs for the Sales department by iterating through numbers
+# and displays each ID created
+# This loop displays "Only 10 valid employee ids remaining" once `i` reaches 5100
+i = 5000
+while i <= 5150: 
+    print(i)
+    if i == 5100:
+        print("Only 10 valid employee ids remaining")
+        # break
+    i = i + 5
