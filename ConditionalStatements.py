@@ -63,3 +63,29 @@ else:
    print("Login attempt made outside of organization hours.")
 
 # ---------------------------------
+approved_list = ["elarson", "bmoreno", "tshah", "sgilmore", "eraab"]
+
+username = "bmoreno"
+
+if username in approved_list:
+    print("This user has access to this device.")
+else:
+    print("This user does not have access to this device.")
+
+organization_hours = True
+
+if organization_hours == True:
+    print("Login attempt made during organization hours.")
+else:
+    print("Login attempt made outside of organization hours.")
+# ----------------------------------------
+approved_list = ["elarson", "bmoreno", "tshah", "sgilmore", "eraab"]
+
+username = "bmoreno"
+
+organization_hours = True
+
+if username in approved_list and organization_hours == True:
+    print("Login attempt made by an approved user during organization hours.")
+else:
+    print("Username not approved or login attempt made outside of organization hours.")
