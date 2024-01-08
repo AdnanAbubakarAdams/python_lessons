@@ -80,10 +80,3 @@ login_status = False
 login_status_type = type(login_status)
 # Display `login_status_type`
 print(login_status_type)
-
-# WRITING CONDITIONAL STATEMENTS
-operating_system = "0S 3"
-if operating_system == "0S 2":
-    print("Updates needed")
-else:
-    print ("No updates needed" )
