@@ -90,3 +90,5 @@ def greet():
     print("2:" + username)
 greet()
 print("3:" + username)
+
+# print(type("Adnan"))
