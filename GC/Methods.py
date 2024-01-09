@@ -55,3 +55,4 @@ url = "https://exampleURL1.com"
 ind = url.index(".com")
 # Extract the website name in `url` and display it
 print(url[8:ind])
+
