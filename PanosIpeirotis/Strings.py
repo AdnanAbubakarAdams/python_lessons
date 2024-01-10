@@ -52,3 +52,69 @@ print(univ[1:-3]) # 'ew York Univers'
 action_done = "Dealing with Data"
 print(action_done[:7])
 print(action_done[-4:])
+
+# ---------- COMPARISONS----ORDERING----FINDING TEXT --------- #
+str1 = 'hello'
+print(str1 == 'hello')
+print(str1 == 'Hello')
+
+print(str1.lower() == 'Hello'.lower())
+
+email1 = "panos@nyu.edu"
+email2 = "peter@nyu.edu"
+print("Are the emails different?", email1 != email2)
+
+name1 = "Abraham"
+name2 = "Bill"
+# Abraham is lexicographically before Bill
+print(name1 < name2)
+
+name1 = "Panos"
+name2 = "Bill"
+# Panos is lexicographically after Bill
+print(name1 < name2)
+
+# --------- # ---------- #
+"""
+Consider the string billgates@microsoft.com. Write code that finds the username of the email address and the domain of the email address. You will need to use the .find() command, and also use your knowledge of indexing and slicing for this exercise. Hint: You will need to search for the @ character using find, and then use the result to get the parts of the string before and after the @ character. (Do not worry if this seems tedious, this is mainly for practice; later on, we will see how to do this in an easier way.)
+"""
+# your code here
+email = "billgates@microsoft.com"
+postion_of_domain = email.find("@")
+domain_of_email = email[9:] # we can also use position_of_domain instead of 9
+username_of_email = email[:9]
+print("position:", postion_of_domain)
+print("username:", username_of_email)
+print("domain:", domain_of_email)
+
+# count function str_1.count(str_2): counts the number of occurrences of one string in another.
+word = "Python is the word. And on and on and on and on..."
+lookfor = "on"
+count = word.count(lookfor)
+print("We see the string '", lookfor, "' that many times: ", count)
+
+word = "Python is the word. And on and on and on and on..."
+lookfor = "PYTHON"
+count = word.lower().count(lookfor.lower())
+print("We see the string '", lookfor, "' that many times: ", count)
+
+"""
+startswith and endswith functions
+Finally, we can also check if a particular string starts or ends with a another substring
+haystack.startswith(needle): does a the haystack string start with the needle string?
+haystack.endswith(needle): does a the haystack string end with the needle string?
+"""
+name = "New York University"
+prefix = "New York"
+print("Does ", name, " starts with", prefix, "?")
+print(name.startswith(prefix))
+
+name = "New York University"
+prefix = "University"
+print("Does ", name, " starts with", prefix, "?")
+print(name.startswith(prefix))
+
+name = "New York University"
+suffix = "University"
+print("Does ", name, " ends with", suffix, "?")
+print(name.endswith(suffix))
