@@ -80,9 +80,9 @@ phones = {
     "John": "693-232-5776",
     "Jake": "415-794-3423",
 }
-phones.keys()
-sorted(phones.keys())
-phones.values()
+print(phones.keys())
+print(sorted(phones.keys()))
+print(phones.values())
 
 
 # Exercise
