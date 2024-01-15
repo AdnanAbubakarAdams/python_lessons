@@ -99,3 +99,18 @@ print(teams_franchise)
 # Dictionary comprehension, where team name becomes the key, and franchise name the value
 words = {w:len(w) for w in sentence.split()}
 print(words)
+
+# EXERCISE
+# You are given the sentence 'The quick brown fox jumps over the lazy dog',
+#Question 1: List each word and its length from the string 'The quick brown fox jumps over the lazy dog', conditioned on the length of the word being four characters and above
+# Question 2: List only words with the letter o in them
+
+sentence = 'The quick brown fox jumps over the lazy dog'
+# List each word and its length from the string
+# 'The quick brown fox jumps over the lazy dog',
+# conditioned on the length of the word being four characters and above
+word_of_length_4 = [(word, len(word)) for word in sentence.split() if len(word)>=4]
+print(word_of_length_4)
+# List only words with the letter o in them
+words_with_O = [word for word in sentence.split() if 'o' in word]
+print(words_with_O)
