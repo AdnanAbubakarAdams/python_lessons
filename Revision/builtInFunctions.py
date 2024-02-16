@@ -27,3 +27,14 @@ def analyze_logins(username, current_day_logins, average_day_logins):
 
 login_analysis = analyze_logins("adnan", 10, 3)
 print("Adnan", "logged in", login_analysis, "times as much as they do on an average day.")
+
+# functions with conditional statement
+def analyze_logins(username, current_day_login, average_day_logins):
+
+    login_ratio = current_day_login / average_day_logins
+    return login_ratio
+
+login_analysis = analyze_logins("Adnan", 9, 3)
+
+if login_analysis >= 3:
+    print ("Alert! This account has more login activity than normal.")
