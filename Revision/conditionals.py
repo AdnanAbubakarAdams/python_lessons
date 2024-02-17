@@ -47,3 +47,32 @@ if username == approved_user1 or username == approved_user2:
     print('this user has access to this device.')
 else:
     print("this user does not have access to this device.")
+
+# 
+list_of_approved_users = ["adnan", "rondo", "james", "son", "hojland"]
+username = "hojland"
+
+if username in list_of_approved_users:
+    print("This user is allow access to score goals in this league")
+else: 
+    print("This user not wanted in this league!")
+
+# 
+organization_hours = False
+
+if organization_hours:
+    print("login attempt made during organizations hours!")
+else: 
+    print("login attempt made outside organizations hours")
+
+# 
+list_of_approved_users = ["adnan", "rondo", "james", "son", "hojland"]
+username = "adnan"
+organization_hours = True
+
+if username in list_of_approved_users and organization_hours:
+    print(username, "made a login attempt during organization hours")
+else:
+    print(username, "made attempt to login outside the organization hours")
+
+# 
