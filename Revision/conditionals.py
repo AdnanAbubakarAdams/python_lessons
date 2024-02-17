@@ -37,3 +37,13 @@ elif system == "OS 1" or system == "OS 3":
     print("updates needed for this OS")
 else:
     print("we got nothing for this pc contact linux")
+
+# 
+approved_user1 = "Adnan"
+approved_user2 = "Rondo"
+username = "Rondo"
+
+if username == approved_user1 or username == approved_user2:
+    print('this user has access to this device.')
+else:
+    print("this user does not have access to this device.")
