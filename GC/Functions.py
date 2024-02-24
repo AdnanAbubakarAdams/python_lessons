@@ -92,4 +92,3 @@ greet()
 print("3:" + username)
 
 print(type("Adnan"))
-
