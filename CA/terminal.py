@@ -19,10 +19,6 @@ x = 'This is a string'
 print(x) # This is a string
 print(type(x)) # str
 
-# working with inputs
-name = input("chicharito")
-print(name)
-
 enter = str(input('What is your name?: '))
 print('welcome to united states of America', enter)
 print(type(enter))
@@ -33,3 +29,14 @@ print(type(lucky_number))
 
 john_age = 12
 print('john is ', str(john_age))
+
+# working with inputs
+name = input("chicharito")
+print(name)
+
+name = input("Enter your name:")
+print(name)
+
+first_number = int(input("enter the first number: "))
+second_number = int(input("enter the second number: "))
+print('The sum is: ', first_number + second_number)

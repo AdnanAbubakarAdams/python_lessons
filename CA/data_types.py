@@ -10,4 +10,13 @@ i_bench_225_lbs = True
 print(type(i_bench_225_lbs)) # bool
 
 candy_price = 6.55
-print(type(candy_price))
+print(type(candy_price)) # float
+
+what_is_the_time = "the time is 11 am"
+print(type(what_is_the_time)) #str
+
+left_side = 10
+right_side = 5
+print(left_side / right_side) #2
+
+
